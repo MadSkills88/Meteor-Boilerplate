@@ -1,0 +1,33 @@
+<template name="profile">
+    <div id="profile-form-wrapper">
+        <h2 class="form-profile-heading">Update Public Profile</h2>
+        <form class="form-profile" id="update-profile-form">
+            <!-- first name -->
+            <label for="first_name" class="">First Name</label>
+            <input type="text" id="first_name" name="first_name" class="form-control" value="{{firstName}}" autofocus>
+            <!-- last name -->
+            <label for="last_name" class="">Last Name</label>
+            <input type="text" id="last_name" name="last_name" class="form-control" value="{{lastName}}" autofocus>
+            <!-- email -->
+            <label for="email" class="">Email</label>
+            <input type="email" id="email" name="email" class="form-control" value="{{email}}" autofocus>
+            <button class="btn btn-lg btn-primary btn-block" type="submit">Confirm</button>
+            <br>
+        </form>
+        <br>
+        <h2 class="form-profile-heading">Change Password</h2>
+        <form class="form-profile" id="change-password-form">
+            <!-- check oldpassword -->
+            <label for="oldpassword" class="">Old Password</label>
+            <input type="password" id="oldpassword" name="oldpassword" class="form-control" placeholder="">
+            <!-- password -->
+            <label for="password" class="">New Password</label>
+            <input type="password" id="password" name="password" class="form-control" placeholder="">
+            <!-- confirm password -->
+            <label for="password2" class="">Confirm Password</label>
+            <input type="password" id="password2" name="password2" class="form-control" placeholder="">
+            <button class="btn btn-lg btn-primary btn-block" type="submit">Confirm</button>
+            <br>
+        </form>
+    </div>
+</template>

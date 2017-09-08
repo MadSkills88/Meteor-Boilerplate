@@ -1,0 +1,95 @@
+.dashboard_layout	{
+	@color_1: #777;
+	margin-top: 50px;
+/* 	margin-top: 20px; */
+	/* Everything but the jumbotron gets side spacing for mobile first views */
+	/* Custom page header */
+	/* Make the masthead heading the same height as the navigation */
+	/* Custom page footer */
+	/* Customize container */
+	/* Main marketing message and sign up button */
+	/* Supporting marketing content */
+	/* Responsive: Portrait tablets and up */
+	/* Remove the padding we set earlier */
+	/* Space out the masthead */
+	/* Remove the bottom border on the jumbotron for visual effect */
+	.header {
+		padding-right: 15px;
+		padding-left: 15px;
+		padding-bottom: 20px;
+		border-bottom: 1px solid #e5e5e5;
+		h3 {
+			margin-top: 0;
+			margin-bottom: 0;
+			line-height: 40px;
+		}
+	}
+	.marketing {
+		padding-right: 15px;
+		padding-left: 15px;
+		margin: 40px 0;
+		p {
+			&+h4 {
+				margin-top: 28px;
+			}
+		}
+	}
+	.footer {
+		padding-right: 15px;
+		padding-left: 15px;
+		padding-top: 19px;
+		color: @color_1;
+		border-top: 1px solid #e5e5e5;
+	}
+	.container-narrow {
+		>hr {
+			margin: 30px 0;
+		}
+	}
+	.jumbotron {
+		text-align: center;
+		border-bottom: 1px solid #e5e5e5;
+		.btn {
+			padding: 14px 24px;
+			font-size: 21px;
+		}
+	}
+	@media (min-width: 768px) {
+		.container {
+			max-width: 730px;
+		}
+	}
+	@media screen and (min-width: 768px) {
+		.header {
+			padding-right: 0;
+			padding-left: 0;
+			margin-bottom: 30px;
+		}
+		.marketing {
+			padding-right: 0;
+			padding-left: 0;
+		}
+		.footer {
+			padding-right: 0;
+			padding-left: 0;
+		}
+		.jumbotron {
+			border-bottom: 0;
+		}
+	}
+	
+/* Styleing for uploader tempalte	 */
+	.upload-area .alert {
+		position: relative;
+	}
+
+	.upload-area input[type="file"] {
+		position: absolute;
+		top: 0px;
+		left: 0px;
+		right: 0px;
+		bottom: 0px;
+		width: 100%;
+		opacity: 0;
+	}
+}

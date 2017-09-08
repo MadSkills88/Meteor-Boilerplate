@@ -1,0 +1,30 @@
+<template name = "dashboard">
+    
+    {{#if currentUser}}
+        {{#if currentUser.emails.[0].verified}}
+            <h3>Welcome {{firstName}}</h3>
+            <h4 class="page-header">Upload a File to Amazon S3</h4>
+            {{> uploader}}
+            {{> files}}
+        {{else}}
+            <p class="alert alert-warning">You need to verify your email address before using foobario. <a href="#" class="resend-verification-link">Resend verification link</a>.</p>
+        {{/if}}
+    {{else}}
+       Checking...   // You can also show a spinner image or GIF here
+    {{/if}}
+    
+<!--     {{#if currentUser.emails.[0].verified}}
+        <h3>Welcome</h3>
+    {{else}}
+        <p class="alert alert-warning">You need to verify your email address before using foobario. <a href="#" class="resend-verification-link">Resend verification link</a>.</p>
+    {{/if}} -->
+</template>
+
+<!-- <template name = "dashboard">
+    {{#unless currentUser.emails.[0].verified}}
+        <p class="alert alert-warning">You need to verify your email address before using foobario. <a href="#" class="resend-verification-link">Resend verification link</a>.</p>
+    {{else}}
+        <h3>Welcome</h3>
+    {{/unless}}
+</template>
+ -->

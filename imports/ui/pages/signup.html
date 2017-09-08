@@ -1,0 +1,34 @@
+<template name="signup">
+    <div class="container">
+        <h2 class="form-signup-heading">Create an Account</h2>
+        <form class="form-signup">
+            <!-- first name -->
+            <label for="first_name" class="sr-only">Email</label>
+            <input type="text" id="first_name" name="first_name" class="form-control" placeholder="First Name" required autofocus>
+            <!-- last name -->
+            <label for="last_name" class="sr-only">Email</label>
+            <input type="text" id="last_name" name="last_name" class="form-control" placeholder="Last Name" required autofocus>
+            <!-- email -->
+            <label for="email" class="sr-only">Email</label>
+            <input type="email" id="email" name="email" class="form-control" placeholder="Email address" required autofocus>
+            <!-- password -->
+            <label for="password" class="sr-only">Password</label>
+            <input type="password" id="password" name="password" class="form-control" placeholder="Password" required>
+            <!-- confirm password -->
+            <label for="password2" class="sr-only">Confirm Password</label>
+            <input type="password" id="password2" name="password2" class="form-control" placeholder="Confirm Password" required>
+
+            <button class="btn btn-lg btn-primary btn-block" type="submit">Sign Up</button>
+            <br>
+            <p>Have an Account? <a href="/login">Log In</a>
+            </p>
+        </form>
+        <div class="panel-footer">
+            <button class="btn btn-primary btn-facebook">Facebook</button>
+            <button class="btn btn-primary btn-twitter">Twitter</button>
+            <button class="btn btn-primary btn-google">Google</button>
+            <!-- <button class="btn btn-primary btn-microsoft">Microsoft</button> -->
+            <button class="btn btn-primary btn-github">Github</button>
+        </div>
+    </div>
+</template>

@@ -1,0 +1,42 @@
+<!-- <template name = "dashboard_navbar">
+  <div class="header clearfix">
+    <nav>
+      <ul class="nav nav-pills pull-right">
+        <li role="presentation" class="active"><a href="/profile">Profile</a></li>
+        <li class="logout" role="presentation"><a href="#">Logout</a></li>
+      </ul>
+    </nav>
+    <h3 class="text-muted">Dashboard</h3>
+  </div>
+</template>
+ -->
+<template name = "dashboard_navbar">
+  <div id="dashboard_navbar" class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" data-toggle="collapse" data-target=".navbar-collapse" class="navbar-toggle">
+			<span class="sr-only">Toggle navigation</span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+		</button>
+		<a href="/dashboard" class="navbar-brand">
+			Foobario
+			<img src=""/>
+		</a>
+      </div>
+      <div class="collapse navbar-collapse">
+        <ul class="nav navbar-nav">
+          <li><a href="/about">About</a></li>
+          <li><a href="/browse">Browse</a></li>
+          <li><a href="/publications">Publications</a></li>
+          <li><a href="/contact">Contact</a></li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="/profile">Profile</a></li>
+          <li class="logout"><a href="#">Log out</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</template>

@@ -1,0 +1,25 @@
+<template name="login">
+    <div class="container">
+        <h2 class="form-signin-heading">Log in to your account</h2>
+        <form class="form-signin">
+            <label for="email" class="sr-only">Email</label>
+            <input type="email" id="email" name="email" class="form-control" placeholder="Email address" required autofocus>
+            <label for="password" class="sr-only">Password</label>
+            <input type="password" id="password" name="password" class="form-control" placeholder="Password" required>
+
+            <button class="btn btn-lg btn-primary btn-block" type="submit">Log In</button>
+            <br>
+            <p style="margin-bottom:0px;">No Account? <a href="/signup">Sign Up</a>
+            </p>
+            <p>Forgot Password?? <a href="/forgot">Reset password</a>
+            </p>
+        </form>
+        <div class="panel-footer">
+            <button class="btn btn-primary btn-facebook">Facebook</button>
+            <button class="btn btn-primary btn-twitter">Twitter</button>
+            <button class="btn btn-primary btn-google">Google</button>
+            <!-- <button class="btn btn-primary btn-microsoft">Microsoft</button> -->
+            <button class="btn btn-primary btn-github">Github</button>
+        </div>
+    </div>
+</template>
