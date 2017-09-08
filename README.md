@@ -1,6 +1,10 @@
 # Foobario: A Comprehensive Meteor Boilerplate 
 [![Travis CI Builds](https://travis-ci.org/MadSkills88/foobario.svg?branch=master)](https://travis-ci.org/MadSkills88/foobario/) [![Node.js](https://cdn.rawgit.com/aleen42/badges/master/src/node.svg)](#)
 
+**How to use...**
+Just clone it and set up an Amazon S3 account and configure your bucket and CORS policy
+Instead of settings.json to store settings (Amazon keys) I used environmental variables (with heroku since it's hosted with heroku)
+
 **Introduction**
 
 Meteor is a full stack, opinionated Javascript MVC web framework useful for fast prototyping. It is built on top of node.js and supports packages from both Atmoshere and npm (as of v1.3). Meteor provides full stack reactivity (automatic rerun when a change in the data source is detected) and data on the wire, meaning that the server sends data, rather than html, that the client then renders. Meteor also uses DDP (distributed data protocol), which is a built-in pub/sub and RPC protocol based on JSON and built on top of SockJs (which emulates Websockets). Since one language, Javascript, is used on both the frontend (client) and backend (server), the code for the client and server are separate. While the client code runs inside a web browser, the server code runs inside a node.js container. As of v1.2, Meteor supports ecmascript ES2015/ES6 modules!!!
